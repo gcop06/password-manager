@@ -70,16 +70,51 @@ zxcvbn (password strength evaluation)
 
 localStorage API
 
+## How to Host Locally
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm (comes with Node.js)
+
+### Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/gcop06/password-manager.git
+   cd password-manager
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in your browser:**
+   - The terminal will show you the local URL (usually `http://localhost:5173/`)
+   - Click the URL or manually navigate to it in your browser
+
+5. **Stop the server:**
+   - Press `Ctrl + C` in the terminal
+
+### Available Commands
+
+- `npm run dev` - Start the development server with hot reload
+- `npm run build` - Build the project for production
+- `npm run preview` - Preview the production build locally
+- `npm run lint` - Check code quality with ESLint
+
+### Troubleshooting
+
+- **Port already in use:** If port 5173 is in use, Vite will automatically use the next available port
+- **Dependencies issues:** Try deleting `node_modules` folder and running `npm install` again
+- **Cache issues:** Hard refresh the browser (Ctrl+F5) to clear cached files
+
 ## How to access the website
-
-Clone the repository:
-
-git clone https://github.com/yourusername/your-repo.git
-
-
-Open index.html in any modern web browser.
-
-Start generating and managing passwords — no setup required!
 
 - Security Notes
 
