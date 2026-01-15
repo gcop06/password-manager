@@ -70,7 +70,7 @@ zxcvbn (password strength evaluation)
 
 localStorage API
 
-- Installation & Usage
+## How to access the website
 
 Clone the repository:
 
