@@ -50,7 +50,7 @@ function PasswordGenerator() {
             onClick={handleCopyToClipboard}
             title="Copy to clipboard"
           >
-            {copied ? '✓ Copied!' : '📋 Copy'}
+            {copied ? 'Copied!' : 'Copy'}
           </button>
         </div>
 
@@ -107,7 +107,7 @@ function PasswordGenerator() {
         </div>
 
         <button className="generate-btn" onClick={handleGeneratePassword}>
-          🎲 Generate Password
+          Generate Password
         </button>
       </div>
     </div>

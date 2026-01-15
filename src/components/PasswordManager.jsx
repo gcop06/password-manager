@@ -110,7 +110,7 @@ function PasswordManager() {
     return (
       <div className="password-manager">
         <div className="manager-card unlock-card">
-          <h2>🔒 Password Manager</h2>
+          <h2>Password Manager</h2>
           <p>Enter your master password to access your passwords</p>
           <div className="unlock-form">
             <input
@@ -122,7 +122,7 @@ function PasswordManager() {
               className="master-password-input"
             />
             <button onClick={handleUnlock} className="unlock-btn">
-              🔓 Unlock
+              Unlock
             </button>
           </div>
           <p className="hint">Hint: Use any password for demo (no actual encryption)</p>
@@ -135,9 +135,9 @@ function PasswordManager() {
     <div className="password-manager">
       <div className="manager-card">
         <div className="manager-header">
-          <h2>🔐 Your Passwords</h2>
+          <h2>Your Passwords</h2>
           <button onClick={handleLock} className="lock-btn" title="Lock password manager">
-            🔒 Lock
+            Lock
           </button>
         </div>
 
@@ -146,7 +146,7 @@ function PasswordManager() {
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder="🔍 Search passwords..."
+            placeholder="Search passwords..."
             className="search-input"
           />
           <button
@@ -156,7 +156,7 @@ function PasswordManager() {
             }}
             className="add-btn"
           >
-            {showForm ? '❌ Cancel' : '➕ Add Password'}
+            {showForm ? 'Cancel' : 'Add Password'}
           </button>
         </div>
 
@@ -211,7 +211,7 @@ function PasswordManager() {
             </div>
 
             <button type="submit" className="submit-btn">
-              {editingId ? '💾 Update' : '💾 Save'}
+              {editingId ? 'Update' : 'Save'}
             </button>
           </form>
         )}
@@ -219,7 +219,7 @@ function PasswordManager() {
         <div className="passwords-list">
           {filteredPasswords.length === 0 ? (
             <div className="empty-state">
-              <p>📭 No passwords stored yet</p>
+              <p>No passwords stored yet</p>
               <p className="hint">Click "Add Password" to get started</p>
             </div>
           ) : (
@@ -234,21 +234,21 @@ function PasswordManager() {
                         className="action-btn edit-btn"
                         title="Edit"
                       >
-                        ✏️
+                        Edit
                       </button>
                       <button
                         onClick={() => handleDelete(entry.id)}
                         className="action-btn delete-btn"
                         title="Delete"
                       >
-                        🗑️
+                        Delete
                       </button>
                     </div>
                   </div>
 
                   {entry.siteUrl && (
                     <a href={entry.siteUrl} target="_blank" rel="noopener noreferrer" className="site-url">
-                      🔗 {entry.siteUrl}
+                      {entry.siteUrl}
                     </a>
                   )}
 
@@ -262,7 +262,7 @@ function PasswordManager() {
                           className="copy-icon"
                           title="Copy username"
                         >
-                          📋
+                          Copy
                         </button>
                       </div>
                     </div>
@@ -277,7 +277,7 @@ function PasswordManager() {
                         className="copy-icon"
                         title="Copy password"
                       >
-                        📋
+                        Copy
                       </button>
                     </div>
                   </div>

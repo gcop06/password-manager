@@ -49,7 +49,7 @@ function PasswordStrengthChecker() {
               onClick={() => setShowPassword(!showPassword)}
               title={showPassword ? 'Hide password' : 'Show password'}
             >
-              {showPassword ? '👁️' : '👁️‍🗨️'}
+              {showPassword ? 'Hide' : 'Show'}
             </button>
           </div>
         </div>

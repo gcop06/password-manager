@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1>🔐 Password Manager & Suggester</h1>
+        <h1>Password Manager & Suggester</h1>
         <p>Generate, check, and manage your passwords securely</p>
       </header>
 
@@ -43,7 +43,7 @@ function App() {
       </main>
 
       <footer className="app-footer">
-        <p>⚠️ Passwords are stored locally in your browser. For production use, implement server-side encryption.</p>
+        <p>Passwords are stored locally in your browser. For production use, implement server-side encryption.</p>
       </footer>
     </div>
   );
